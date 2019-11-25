@@ -1,0 +1,429 @@
+:root {
+     --primario: #4cb8b3;
+     --primarioSuave: #6ac4be;
+     --secundario: #e08709;
+     --secundarioSuave: #e9941d;
+ }
+ body {
+     font-family: 'Lato', sans-serif;
+ }
+ h1,h2,h3 {
+     font-weight: 300;
+ }
+ .header{
+      max-height: 700px;
+ }
+ .barra {
+     background-color:var(--primario);
+ }
+ @media (min-width: 768px) { 
+     .barra {
+         background-color:#50505000;
+         transition: all .2s ease-in;
+     }
+     .barra nav {
+        transition: all .2s linear;
+    }
+     .header {
+         position: relative;
+     }
+     .header .barra {
+         position: fixed;
+         z-index: 100;
+         width: 100%;
+     }
+     .barra-scroll{
+          background-color: var(--primario);
+          padding: 0 -10px;
+          box-shadow:0px 1px 10px 2px rgba(49, 49, 49, 0.6)
+     }
+ }
+ .navbar-nav a {
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+ .navbar-dark img{
+      max-width: 70px;
+ }
+ .navbar-dark .navbar-nav .nav-link {
+     color: white;
+     font-size: 1rem;
+ }
+ .dropdown-menu {
+     background-color: var(--primario);
+ }
+ .dropdown-menu .dropdown-item {
+     color: white;
+ }
+ .dropdown-menu .dropdown-item:hover {
+     background-color: #e08709;
+ }
+ .navbar-brand {
+     font-size: 2.2rem;
+     font-weight: 300;
+ }
+ .carousel-item img{
+      max-height: 700px;
+ }
+ .navbar-brand span {
+     font-weight: 900;
+ }
+ .carousel-caption h3 {
+     font-size: 2.4rem;
+     font-weight: 700;
+ }
+ .bloque-info p { 
+     font-size: 1.4rem; 
+ }
+ 
+ .btn-warning {
+     background-color: #e08709;
+     color: white;
+     font-weight: 700;
+     font-size: 1rem;
+     border-color: #e08709;
+ }
+ .main h3 { 
+     font-size: 1rem;
+     font-weight: 700;
+ }
+ .anuncios .card {
+     margin-bottom: 2rem;
+ }
+ .card-descripcion img{
+    margin-right: .5rem;
+ }
+ /*main*/
+ main .contenedor{
+      box-shadow: 0 0 20px 6px #f3f3f3;
+      border: 3px solid #f3f3f3;
+      border-radius: 3px;
+ }
+/*seccion 1*/
+ .sobre-nosotros{
+    background-color: var(--primario);
+}
+ /*seccion 2*/
+ .section2 h2::before{
+    content: "";
+    width: 52px;
+    height: 2px;
+    /* background-color: var(--primary); */
+    border: 2px solid var(--secundario);
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+    z-index: -1;
+    opacity: 1;
+}
+ .imagen-nosotros{
+     min-height: 30rem;
+      background-image: url('../img/img6.jpg');
+      background-repeat: no-repeat;
+      background-position: right center;
+ }
+ .contenido h1{
+      font-weight: 900;
+ }
+ .img-logo img{
+      max-width: 260px;
+ }
+
+ /*seccion 3*/
+ .section3 {
+     background-image: url('../img/Tug\ of\ war.JPG');
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+ .section3 .container .row{
+     height: 24rem;
+ }
+ .section3 h3 {
+     font-size: 2.2rem;
+     font-weight: 900;
+ }
+ .btn-success {
+    background-color:  var(--secundario);
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+ }
+ .slide {
+     border-radius: 4px;
+     background-color: var(--primario);
+     transition: all .2s ease-in;
+ }
+ .slide:hover{
+     background-color: var(--primarioSuave);
+ }
+ .slide:hover .carousel-slide-item{
+    background-color: var(--primarioSuave);
+}
+  /*seccion 4*/
+.testimonial-texto{
+     font-size: 1.1rem;
+     line-height: 2.1rem;
+}
+
+ /*footer*/
+ .footer{
+     box-shadow: 0px -1px 15px 5px rgba(0,0,0,0.5);
+ }
+ .bg-dark {
+     background-color: #494949!important;
+     color: #ffffff;
+ }
+ .copy{
+     background-color:#3c3c3c ;
+ }
+ 
+ .sociales ul{
+     list-style: none;
+ }
+ .sociales ul li {
+     position: relative;
+     display: inline-block;
+ }
+ .sociales ul li a::before {
+     font-family: 'FontAwesome';
+     display: inline-block;
+     vertical-align: top;
+     padding: 0.4rem;
+     content: '\f08e';
+     font-size: 2rem;
+     color: var(--primario);
+ }
+ 
+ .sociales ul li a[href*="facebook.com"]::before{
+     content: '\f230';
+ }
+ /* .sociales ul li a[href*="twitter.com"]::before{
+     content: '\f081';
+ }
+ .sociales ul li a[href*="instagram.com"]::before{
+     content: '\f16d';
+ }
+ */
+ .text-footer{
+    line-height: 30px;
+ }
+ .list-foot{
+     padding-left: 0;
+     list-style: none;
+ }
+.list-foot li a{ 
+    color: #ffffff;
+}
+ /*GALLERY*/
+ .gallery {
+     -webkit-column-count: 3;
+     -moz-column-count: 3;
+     column-count: 3;
+     -webkit-column-width: 33%;
+     -moz-column-width: 33%;
+     column-width: 33%; }
+     .gallery .pics {
+     -webkit-transition: all 350ms ease;
+     transition: all 350ms ease; }
+     .gallery .animation {
+     -webkit-transform: scale(1);
+     -ms-transform: scale(1);
+     transform: scale(1); }
+     
+     @media (max-width: 450px) {
+     .gallery {
+     -webkit-column-count: 1;
+     -moz-column-count: 1;
+     column-count: 1;
+     -webkit-column-width: 100%;
+     -moz-column-width: 100%;
+     column-width: 100%;
+     }
+     }
+     
+     @media (max-width: 400px) {
+     .btn.filter {
+     padding-left: 1.1rem;
+     padding-right: 1.1rem;
+     }
+     }
+/*HISTORIA*/
+.his{
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 7px 1px #b8b4b4;
+    -moz-box-shadow: 0px 0px 7px 1px #b8b4b4;
+    box-shadow: 0px 0px 7px 1px #b8b4b4;
+    transition: all .1s linear;
+}
+.his:hover{
+    transform: scale(1.07);
+}
+.titulo-his{
+    background-color: #e08609;
+    -webkit-box-shadow: 0px 0px 7px 1px #b8b4b4;
+    -moz-box-shadow: 0px 0px 7px 1px #b8b4b4;
+    box-shadow: 0px 2px 15px 1px #969191;
+    color: #ffffff;
+}
+.titulo-his h2{
+    font-weight: 700;
+}
+.his-text{
+    font-weight: 600;
+    height: 100%;
+    width: 100%;
+    background-color: #e0860998;
+    color: #ffffff;
+    transition: all .2s linear;
+    transform: translate(1000px, 0 );
+}
+.his:hover .his-text{
+    transform: translate(0, 0 );
+}
+.his-1-fondo{
+    background-image: url('../img/20160824-DHB-09323_preview.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+}
+.his-2-fondo{
+    background-image: url(../img/img4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.his-3-fondo{
+    background-image: url(../img/Tug\ of\ war.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.his-4-fondo{
+    background-image: url(../img/img12.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.his-5-fondo{
+    background-image: url('../img/IMG_2485.JPG');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.his-6-fondo{
+    background-image: url(../img/img11.JPG);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+/*CASA HOGAR*/
+.imagen-casa-hogar{
+    border-radius: 10px 0 0 10px;
+    background-image: url(../img/img10.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-casa{
+    height: 100%;
+    color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px#606a6f;
+    background-color: var(--secundario);
+    transition: all .1s linear;
+}
+.text-casa:hover{
+    background-color: var(--secundarioSuave);
+    transform: scale(1.05);
+}
+/*AOGIMIENTO*/
+.text-acogimiento{
+color: var(--secundario);
+font-weight: 300;
+}
+ /*CONTACTO*/
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.slide-contacto{
+    background-color: #f3f3f3;
+    color:  #606a6f;
+    border: solid 1px #d7dcdf;
+    border-radius: 5px;
+}
+.slide-contacto h3{
+    font-weight: 700;
+    color:var(--secundario);
+}
+.header-demas-fondo{
+    z-index: 90;
+    height: 480px;
+    background-color: rgba(106, 196, 190, 0.322); 
+   
+}
+ .header-demas{
+     background-image: url('../img/Tug\ of\ war.JPG');
+     background-position: center -270px;
+     background-size: 90rem;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     color: #ffffff;
+     height: 480px;
+ }
+ .header-demas h1{
+     font-weight: 700;
+     font-size: 3.2rem;
+     text-transform: uppercase;
+     text-shadow: 1px 1px 9px #555454c0;
+ }
+ .barra-demas{
+     background-color: var(--primario);
+     position: fixed;
+     z-index: 100;
+     width: 100%;
+ }
+ .sidebar{
+     background-color: var(--primario);
+     color: #ffffff;
+ }
+ 
+ .formulario-contacto{
+     border-radius: 10px;
+     box-shadow: 0 0 10px #ddd;
+     background:linear-gradient(90deg, #b0dad5 0%, #6ac4be 100%);
+ }
+ .contenido-principal{
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+    background:#ffffff;
+}
+.contenido-principal h2{
+    color: var(--secundario);
+    font-weight: 700;
+}
+
+/* Scroll Personalizado */
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: #ebe7e7;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+	background:var(--primarioSuave);
+}
